@@ -49,12 +49,15 @@ a {
     color: #F9FAF8;
     margin-bottom: 5px;
     flex: 1;
+    word-wrap: break-word;
 }
 
 .body-intro-secondary-text {
     font-size: 18px;
     color: #cfcfcf;
     flex: 1 1 auto;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
 }
 
 .body-intro > img {
@@ -81,9 +84,9 @@ button {
 
 .body-content {
     display: flex;
-    flex-flow: column nowrap;
-    padding: 2em 15em;
-    flex: 1 0 auto;
+    flex-flow: column wrap;
+    padding: 2em;
+    align-items: center;
 }
 
 .body-content-title {
@@ -97,7 +100,7 @@ button {
 .image-container {
     display: flex;
     flex: 0 0 auto;
-    justify-content: space-between;
+    gap: 2em;
 }
 
 .image-item > img {
